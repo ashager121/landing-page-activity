@@ -8,7 +8,7 @@ html, body {
 }
 body > * {
    box-sizing: border-box;
-   font-family: '<your font>';
+   font-family: '';
 }
 img {
    width: 100%;
@@ -18,3 +18,62 @@ img {
     padding: 0 30px;
     max-width: 1200px;
 }
+.hero {
+   height: 100vh;
+}
+.texture-background {
+   background-image: url('./images/backgrounds/hero-bg-texture.png');
+   background-size: cover;
+   background-position: center center;
+}
+ .cards-background {
+   background-image: url('./images/backgrounds/hero-bg-cards.png');
+   background-size: contain;
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+.hero .logo-wrapper img {
+   max-width: 250px;
+   height: 100%;
+}
+.nav-wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+.nav-wrapper .logo-wrapper {
+   justify-content: flex-start;
+   padding: 10px;
+   margin-left: 100px;
+}
+.nav-wrapper .nav-elements ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+}
+
+.nav-elements li {
+   padding: 10px;
+   list-style-type: none;
+}
+.nav-elements button {
+   padding: 10px;
+   margin-right: 100px;
+   color: white;
+   background-color: blue;
+   text-transform: uppercase;
+   border-radius: 21px;
+   width: 150px;
+}
+.inbound .inbound-img {
+   display: flex;
+   justify-content: center;
+}
+.inbound-img img {
+   width: 500px;
+   height: 100%;
+   box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+}
+
