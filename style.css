@@ -1,32 +1,49 @@
 /*Base CSS example*/
 html {
-    font-size: 1rem;
+   font-size: 1rem;
 }
-html, body {
+
+html,
+body {
    margin: 0;
    padding: 0;
 }
-body > * {
-   box-sizing: border-box;
-   font-family: '';
+
+@font-face {
+   font-family: futuraBook;
+   src: url('/fonts/futura-book.ttf');
 }
+
+body>* {
+   box-sizing: border-box;
+   font-family: futuraBook;
+}
+
+h1 {
+   margin-left: 150px;
+}
+
 img {
    width: 100%;
 }
+
 .container {
-    margin: 0 auto;
-    padding: 0 30px;
-    max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 30px;
+   max-width: 1200px;
 }
+
 .hero {
    height: 100vh;
 }
+
 .texture-background {
    background-image: url('./images/backgrounds/hero-bg-texture.png');
    background-size: cover;
    background-position: center center;
 }
- .cards-background {
+
+.cards-background {
    background-image: url('./images/backgrounds/hero-bg-cards.png');
    background-size: contain;
    background-position: center center;
@@ -35,19 +52,23 @@ img {
    display: flex;
    flex-direction: column;
 }
+
 .hero .logo-wrapper img {
-   max-width: 250px;
+   /* max-width: 250px; */
    height: 100%;
 }
+
 .nav-wrapper {
    display: flex;
    justify-content: space-between;
 }
+
 .nav-wrapper .logo-wrapper {
    justify-content: flex-start;
    padding: 10px;
    margin-left: 100px;
 }
+
 .nav-wrapper .nav-elements ul {
    display: flex;
    flex-direction: row;
@@ -58,6 +79,7 @@ img {
    padding: 10px;
    list-style-type: none;
 }
+
 .nav-elements button {
    padding: 10px;
    margin-right: 100px;
@@ -67,13 +89,82 @@ img {
    border-radius: 21px;
    width: 150px;
 }
+
 .inbound .inbound-img {
    display: flex;
    justify-content: center;
 }
+
 .inbound-img img {
    width: 500px;
    height: 100%;
-   box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+   border-radius: 5px;
 }
 
+.sections-boxes div {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+}
+
+/*Mark All Box Starts Here*/
+.mark-all {
+   display: flex;
+   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, .75);
+   padding: 30px;
+   width: 300px;
+   background-color: white;
+}
+
+.mark-all img {
+   margin-top: 10px;
+   width: 20px;
+   height: 100%;
+}
+
+/* Integration Box Starts Here */
+.integrate {
+   display: flex;
+   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, .75);
+   padding: 30px;
+   width: 300px;
+   background-color: white;
+}
+
+.integrate-icons img {
+   margin-top: 10px;
+   width: 20px;
+   height: 100%;
+}
+
+/* See All Section Start Here */
+.see-all {
+   display: flex;
+   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, .75);
+   padding: 30px;
+   width: 300px;
+   background-color: white;
+}
+
+.see-all img {
+   margin-top: 10px;
+   width: 20px;
+   height: 100%;
+}
+
+/* dashboard img */
+
+.dashboard img {
+   display: flex;
+   justify-content: center;
+   max-width: 900px;
+   height: 100%
+}
+
+@media (min-width: 720px) {
+   .sections-boxes div {
+      display: flex;
+      flex-direction: column;
+   }
+}
