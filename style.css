@@ -37,12 +37,6 @@ h3 {
    color: black;
 }
 
-h3 {
-   display: flex;
-   justify-content: center;
-   color: blue;
-}
-
 .get-zenith {
    padding-top: 100px;
 }
@@ -58,6 +52,11 @@ img {
 }
 
 /* Hero Section Starts Here */
+.hero-wrapper {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
 
 .hero {
    height: 100vh;
@@ -85,6 +84,8 @@ nav .logo-wrapper {
 
 .nav-elements {
    display: none;
+   font-size: 15px;
+   font-family: 'futuraHeavy';
 }
 
 .nav-elements ul {
@@ -107,7 +108,6 @@ nav .logo-wrapper {
    background-color: blue;
    text-transform: uppercase;
    border-radius: 21px;
-   width: 150px;
    height: 40px;
 }
 
@@ -116,6 +116,7 @@ nav .logo-wrapper {
    background-size: cover;
    background-position: center center;
    /* margin: 100px 0px; */
+   height: 100%;
 }
 
 .inbound .inbound-img {
@@ -133,7 +134,13 @@ nav .logo-wrapper {
 
 
 
-/*shadow sections starts here */
+/*features sections starts here */
+
+.features h1 {
+   display: flex;
+   justify-content: center;
+   color: blue;
+}
 
 .shadow-box {
    display: flex;
@@ -175,9 +182,15 @@ nav .logo-wrapper {
    height: 100%
 }
 
-/*Features Section Starts Here*/
+/*Integrations Section Starts Here*/
 .integrations {
    margin-top: 150px;
+}
+
+.integrations h1 {
+   display: flex;
+   justify-content: center;
+   color: blue;
 }
 
 .logos {
@@ -198,11 +211,15 @@ nav .logo-wrapper {
    height: 100%;
 }
 
-.logos .img-wrapper {
+.logos .logo {
    display: flex;
    justify-content: center;
    flex: 50%;
+}
+
+.logos .img-wrapper {
    margin-top: 25px;
+   padding: 20px;
 }
 
 /* Footer Section Starts Here */
@@ -228,9 +245,10 @@ button {
    margin-left: 10px;
    padding: 10px;
    border-radius: 15px;
-   width: 100px;
+   width: 169px;
    border: none;
    color: blue;
+   font-size: 15px;
 }
 
 .email-input input {
@@ -239,8 +257,9 @@ button {
    opacity: .75;
    text-align: center;
    border: none;
-   width: 300px;
+   width: 482px;
    box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
+   font-size: 17px;
 }
 
 .footer-list {
@@ -256,6 +275,7 @@ li {
    flex-direction: column;
    text-decoration: none;
    padding: 10px;
+   font-size: 15px;
 }
 
 .footer-list a {
@@ -287,8 +307,18 @@ li {
       background-size: contain;
       background-position: center center;
       background-repeat: no-repeat;
-      height: 100vh;
+      height: 100%;
       flex-direction: column;
+   }
+
+   .cards-background .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .inbound {
+      justify-self: center;
    }
 
    .features-boxes {
@@ -301,5 +331,11 @@ li {
       flex-direction: row;
       justify-content: center;
       flex-wrap: nowrap;
+   }
+
+   .logos .logo {
+      display: flex;
+      justify-content: center;
+      flex: 50%;
    }
 }
