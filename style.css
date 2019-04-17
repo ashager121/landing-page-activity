@@ -1,3 +1,10 @@
+/* 
+    Line 56: Logo img looks fine on desktop, but way to big on mobile
+    Line 102: Your fixed width is causing horizontal scrolling on mobile
+    Line: 165: No drop shadow on img?
+    Footer: Should be a gradient background. The form elements should be a pill style. They need more border-radius
+*/
+
 /*Base CSS example*/
 html {
    font-size: 1rem;
