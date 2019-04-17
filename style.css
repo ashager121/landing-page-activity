@@ -2,106 +2,84 @@
 html {
    font-size: 1rem;
 }
-
 html>* {
    box-sizing: border-box;
 }
-
 html,
 body {
    margin: 0;
    padding: 0;
 }
-
 @font-face {
    font-family: 'futuraBook';
    src: url('./fonts/futura-book.ttf');
 }
-
 @font-face {
    font-family: 'futuraHeavy';
    src: url('./fonts/futura-heavy.ttf');
 }
-
 body>* {
    box-sizing: border-box;
    font-family: 'futuraBook';
 }
-
-h1,
-h3 {
+h1,h3 {
    font-family: 'futuraHeavy';
 }
-
 .first-section {
    color: black;
 }
-
 .get-zenith {
    padding-top: 100px;
 }
-
 img {
    width: 100%;
 }
-
 .container {
    margin: 0 auto;
    padding: 0 60px;
    max-width: 1200px;
 }
-
 /* Hero Section Starts Here */
 .hero-wrapper {
    height: 100vh;
    display: flex;
    flex-direction: column;
 }
-
 .hero {
    height: 100vh;
 }
-
 .logo-wrapper img {
    min-width: 200px;
    max-width: 250px;
    height: auto;
 }
-
 nav {
    display: flex;
    justify-content: space-between;
 }
-
 .hamburger-wrapper {
    display: flex;
    align-items: center;
 }
-
 nav .logo-wrapper {
    padding: 10px;
 }
-
 .nav-elements {
    display: none;
    font-size: 15px;
    font-family: 'futuraHeavy';
 }
-
 .nav-elements ul {
    display: flex;
    flex-direction: row;
    justify-content: flex-end;
 }
-
 .nav-elements li {
    list-style-type: none;
 }
-
 .nav-elements a {
    text-transform: uppercase;
 }
-
 .nav-elements button {
    padding: 10px;
    color: white;
@@ -110,38 +88,39 @@ nav .logo-wrapper {
    border-radius: 21px;
    height: 40px;
 }
-
 .texture-background {
    background-image: url('./images/backgrounds/hero-bg-texture.png');
    background-size: cover;
    background-position: center center;
-   /* margin: 100px 0px; */
    height: 100%;
 }
-
 .inbound .inbound-img {
    margin: 150px 0px;
    display: flex;
    justify-content: center;
 }
-
 .inbound-img img {
    width: 500px;
    height: 100%;
    box-shadow: 1px 1px 25px 0 rgba(0, 0, 0, .25);
    border-radius: 5px;
 }
-
-
-
 /*features sections starts here */
-
 .features h1 {
    display: flex;
    justify-content: center;
    color: blue;
 }
-
+.features-boxes {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 150px;
+}
+.features-boxes .shadow-box{
+   display: flex;
+   width: 33%;
+}
 .shadow-box {
    display: flex;
    box-shadow: 1px 1px 25px 0 rgba(0, 0, 0, .25);
@@ -151,23 +130,16 @@ nav .logo-wrapper {
    align-items: center;
    justify-content: space-between;
    margin: 15px;
+   min-width: 345px;
 }
-
 .shadow-box img {
    max-width: 19px;
    max-height: 55px;
    object-fit: contain;
 }
-
 .shadow-box p {
    width: 200px;
    margin: 0;
-}
-
-.features-boxes {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
 }
 
 /* dashboard img */
@@ -175,60 +147,51 @@ nav .logo-wrapper {
    display: flex;
    justify-content: center;
 }
-
 .dashboard img {
-   margin-top: 100px;
-   max-width: 900px;
+   margin-top: 150px;
+   max-width: 850px;
    height: 100%
 }
 
 /*Integrations Section Starts Here*/
 .integrations {
-   margin-top: 150px;
+   margin-top: 270px;
 }
-
 .integrations h1 {
    display: flex;
    justify-content: center;
    color: blue;
 }
-
 .logos {
    display: initial;
    justify-content: center;
    margin-top: 100px;
 }
-
 .logos {
    display: flex;
    align-items: center;
    flex-direction: row;
    flex-wrap: wrap;
 }
-
 .logos img {
    max-width: 160px;
    height: 100%;
 }
-
 .logos .logo {
    display: flex;
    justify-content: center;
    flex: 50%;
 }
-
 .logos .img-wrapper {
    margin-top: 25px;
    padding: 20px;
 }
 
 /* Footer Section Starts Here */
-
 .footer-section {
    margin-top: 150px;
    background-color: blue;
 }
-
 footer h1 {
    color: white;
    display: flex;
@@ -240,35 +203,31 @@ footer h1 {
    display: flex;
    justify-content: center;
 }
-
 button {
    margin-left: 10px;
    padding: 10px;
    border-radius: 15px;
-   width: 169px;
+   min-width: 169px;
    border: none;
    color: blue;
    font-size: 15px;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
 }
-
 .email-input input {
    padding: 10px;
    border-radius: 15px;
    opacity: .75;
-   text-align: center;
    border: none;
-   width: 482px;
+   width: 211px;
    box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
    font-size: 17px;
 }
-
 .footer-list {
    margin-top: 100px;
-   margin-right: 50px;
+   margin-right: 0px;
    display: flex;
    justify-content: flex-end;
 }
-
 .footer-list ul,
 li {
    display: flex;
@@ -277,13 +236,11 @@ li {
    padding: 10px;
    font-size: 15px;
 }
-
 .footer-list a {
    font-family: 'futuraBook';
    text-decoration: none;
    color: white;
 }
-
 .footer-texture {
    background-image: url('./images/backgrounds/footer-bg-texture.png');
    background-size: cover;
@@ -292,16 +249,20 @@ li {
 
 /* media queries start here */
 @media (min-width: 850px) {
+   .email-input input {
+      width: 480px;
+   }
+   .footer-list {
+      margin-right: 50px;
+   }
    .nav-elements {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
    }
-
    .hamburger-wrapper {
       display: none;
    }
-
    .cards-background {
       background-image: url('./images/backgrounds/hero-bg-cards.png');
       background-size: contain;
@@ -310,29 +271,24 @@ li {
       height: 100%;
       flex-direction: column;
    }
-
    .cards-background .container {
       height: 100%;
       display: flex;
       flex-direction: column;
    }
-
    .inbound {
       justify-self: center;
    }
-
    .features-boxes {
       flex-direction: row;
       justify-content: center;
    }
-
    .logos {
       display: flex;
       flex-direction: row;
       justify-content: center;
       flex-wrap: nowrap;
    }
-
    .logos .logo {
       display: flex;
       justify-content: center;
