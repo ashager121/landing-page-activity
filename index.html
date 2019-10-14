@@ -16,15 +16,18 @@
                 <div class="logo-wrapper">
                     <img src="images/hero/zenith-logo.png" alt="logo" />
                 </div>
-                <div class="hamburger-wrapper">
+                <div class="hamburger-wrapper" onClick="toggleNav()">
                     <img src="images/hamburger-menu.png" alt="hamburger" />
                 </div>
-                <div class="nav-elements">
-                    <ul>
-                        <li>FEATURES</li>
-                        <li>INTEGRATIONS</li>
-                        <button id="zenith-button">GET ZENITH</button>
-                    </ul>
+                <div class="nav-wrapper">
+                    <div class="nav-elements" id="nav-elements">
+                        <ul>
+                            <li><a href="#">FEATURES</a></li>
+                            <li><a href="#">INTEGRATIONS</a></li>
+                            <li><button id="zenith-button">GET ZENITH</button></li>
+
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -128,5 +131,7 @@
         </footer>
     </section>
 </body>
+
+<script src="global.js"></script>
 
 </html>
