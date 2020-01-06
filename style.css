@@ -272,7 +272,12 @@ li {
 
 /* media queries start here */
 /* fix desktop alignment here */
-@media (min-width: 850px) {
+
+@media (min-width: 1150px) {
+   .nav-wrapper {
+      width: auto;
+      
+   }
    .inbound-img img {
       max-width: 750px;
    }
@@ -285,17 +290,6 @@ li {
    }
    .footer-list {
       margin-right: 50px;
-   }
-   .nav-elements {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-   }
-   .nav-elements ul {
-      flex-direction: row;
-   }
-   .hamburger-wrapper {
-      display: none;
    }
    .cards-background {
       background-image: url('./images/backgrounds/hero-bg-cards.png');
@@ -327,5 +321,18 @@ li {
       display: flex;
       justify-content: center;
       flex: 50%;
+   }
+}
+@media (min-width: 850px){
+   .nav-elements {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+   }
+   .nav-elements ul {
+      flex-direction: row;
+   }
+   .hamburger-wrapper {
+      display: none;
    }
 }
